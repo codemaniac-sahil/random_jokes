@@ -6,12 +6,12 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #143F6B;
+    background-color: #1c5a98;
    
 
 }
 .container{
-    background-color: #F55353;
+    background-color: #e94f4f;
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
