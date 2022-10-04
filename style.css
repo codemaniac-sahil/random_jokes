@@ -7,11 +7,33 @@
 }
 body{
     background-color: #56aaff;
-   
-
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: #fff;
+    animation: scroll 70s linear infinite;
+    background-image: url(./bg1.jpg);
+    background-size:cover;
+    color:black;
+    height: 100vh;
+    min-width: 360px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
 }
+@keyframes scroll {
+    100%{
+     background-position:0px -3000px;
+   }
+  }
 .container{
-    background-color: hsl(42deg 86% 61%);
+    background-image: url(./bg2.jpg);
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
@@ -23,8 +45,7 @@ body{
     gap: 1.5em;
     text-align: center;
     box-shadow: 2px 2px 12px rgb(0, 0, 0);
-    
-
+    animation: scroll 70s linear infinite;
 }
 .maindiv{
     height: 100vh;
@@ -34,11 +55,11 @@ body{
     align-items: center;
 }
 button{
-    background-color: #3a0086;
+    background-color:grey;
     border: 0;
     padding: 10px 20px;
     font-weight: bolder;
-    color:#ffffff;
+    color:black;
     border-radius:5px ;
     cursor: pointer;
     font-size: 20px;
@@ -46,7 +67,7 @@ button{
 }
 
 button:hover{
-    background-color: #6f00ff;
+    background-color:white;
     transition: 0.4s;
 }
 .container h1{
