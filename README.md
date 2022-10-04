@@ -13,3 +13,9 @@ And i use icanhazdadjoke for API.
 You can test this website using link given below
 
 Website Link : https://deft-cheesecake-991c63.netlify.app
+
+# Thanks to all Contributors
+
+Thanks a lot for spending your time helping random_jokes.
+
+[![Contributors](https://contrib.rocks/image?repo=codemaniac-sahil/random_jokes)](https://github.com/codemaniac-sahil/random_jokes/graphs/contributors)
