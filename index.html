@@ -4,17 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:site_name" content="Snapchat" />
+    <meta property="og:title" content="The fastest way to share a moment!" />
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <title>Random jokes</title>
 </head>
 <body>
+    <script>
+        // Load the SDK asynchronously
+        (function (d, s, id) {
+          var js,
+            sjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s);
+          js.id = id;
+          js.src = "https://sdk.snapkit.com/js/v1/create.js";
+          sjs.parentNode.insertBefore(js, sjs);
+        })(document, "script", "snapkit-creative-kit-sdk");
+      </script>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v15.0" nonce="oMMbYzCu"></script>
     <div class="maindiv">
     <div class="container">
         <h1>Random Dad's Jokes</h1>
         <h3>Don't laugh challenge</h3>
         <span id="dad_jokes"></span>
         <button id="generate_joke">Generate Joke</button>
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+        <div class="snapchat-creative-kit-share"></div>   
     </div>
     </div>
     <script src="script.js"></script>
