@@ -1,3 +1,5 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 *{
     margin: 0;
@@ -39,7 +41,9 @@ body{
     /* justify-content: center; */
     align-items: center;
     width: 500px;
-    padding: 100px 20px;
+    padding-bottom: 0px;
+    padding-top: 80px; padding-bottom: 30px;
+    padding-left: 20px; padding-right: 20px;
     border-radius: 10px;
     flex-wrap: wrap;
     gap: 1.5em;
@@ -106,7 +110,7 @@ button {
         width: 90%;
     }
 }
-.foot{
+/* .foot{
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -123,4 +127,56 @@ border-radius: 6px;
 #snap{
   margin-bottom: -6.2rem;
  margin-left: 3rem;
+} */
+
+.footer {
+  width: 100%;
+  color:#7500a3;
+  padding-bottom :0px;
+  margin-top: 69px;
+  font-weight: 500;
 }
+.footerlasr {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+p {
+  font-weight: bold;
+}
+
+#credits {
+  margin-top: 6.9px;
+}
+
+.fa.fa-heart {
+  color:#7500a3;
+}
+
+.footer-social-media {
+  font-size: 25px;
+}
+.social-icon {
+  width: 40px;
+  height: 40px;
+  padding: 7px 0;
+  text-align: center;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.2s ease-in;
+}
+.fa-facebook:hover {
+  color: rgb(20, 20, 231);
+}
+.fa-instagram:hover {
+  color: rgb(173, 10, 160);
+}
+.fa-twitter:hover {
+  color: rgb(47, 196, 255);
+}
+.fa-youtube:hover {
+  color: rgba(223, 16, 16, 0.904);
+}
+
