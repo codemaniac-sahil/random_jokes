@@ -7,6 +7,10 @@
     font-family:'Ubuntu' ;
     box-sizing: border-box;
 }
+.heading{
+  font-family:'Silkscreen', cursive;
+  
+}
 body{
     background-color: #56aaff;
     margin: 0;
