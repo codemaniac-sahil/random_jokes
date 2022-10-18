@@ -9,6 +9,7 @@ async function get_jokes(){
             'Accept':'application/json'
         }
     });
+    console.log(jokeRes)
     const resJson=await jokeRes.json();
     joke.innerHTML=resJson.joke;
 }

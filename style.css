@@ -184,6 +184,9 @@ p {
 .fa-youtube:hover {
   color: rgba(223, 16, 16, 0.904);
 }
+.fa-discord:hover{
+  color: rgb(142, 76, 187);
+}
 
 /*
 Extra small devices (phones,600px and down) */
