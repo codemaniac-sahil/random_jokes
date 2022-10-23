@@ -12,7 +12,7 @@ And i use icanhazdadjoke for API.
 
 You can test this website using link given below
 
-Website Link : https://deft-cheesecake-991c63.netlify.app
+Website Link : https://random-joke-generator-api.netlify.app
 
 # Thanks to all Contributors
 
