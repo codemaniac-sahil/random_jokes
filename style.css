@@ -11,7 +11,30 @@
   font-family:'Pacifico', cursive;
   color: var(--heading-color);
   text-shadow: 2px 5px rgba(0, 0, 0, 0.2);
-  
+/* ScrollBar Styling */
+}
+::-webkit-scrollbar{
+  width: 0.7em;
+}
+::-webkit-scrollbar-track{
+  background: rgb(44, 44, 44);
+  border-radius: 100vw;
+  margin-block: .5em; /*margin top bottom*/
+
+}
+::-webkit-scrollbar-thumb{
+  background: rgb(123, 123, 123);
+  border-radius: 100vw; 
+}
+::-webkit-scrollbar-thumb:hover{
+  background: rgb(93, 93, 93);
+}
+/* ScrollBar For Firefox */
+@supports (scrollbar-color: rgb(123, 123, 123) rgb(44, 44, 44)){
+  *{
+    scrollbar-color: rgb(123, 123, 123) rgb(44, 44, 44);
+    scrollbar-width: thin;
+  }
 }
 body{
     background: var(--background-color);
@@ -29,9 +52,11 @@ body{
     width: 100%; */
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     perspective: 1000px;
     perspective-origin: 50% 50%;
+    min-height: 100vh;
+    padding: 30px 5px;
 }
 /* #mode{
   width:30px;
@@ -39,9 +64,13 @@ body{
 } */
 .maindiv{
   position:relative;
-  top:30px;
+  /* top:30px; */
 } 
-
+.maindiv h1{
+  text-align: center;
+  line-height: 40px;
+  margin-bottom: 10px;
+}
 /* @keyframes scroll {
     100%{
      background-position:0px -3000px;
@@ -52,12 +81,13 @@ body{
     display: flex;
     flex-direction: column;
     background-size: 200% 300%;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
     width: 100%;
-    padding-bottom: 0px;
-    padding-top: 40px; padding-bottom: 30px;
-    padding-left: 20px; padding-right: 20px;
+    margin: 0 20px;
+    /* padding-top: 40px; padding-bottom: 30px;
+    padding-left: 20px; padding-right: 20px; */
+    padding: 30px 20px ;
     border-radius: 40px;
     flex-wrap: wrap;
     /* gap: 1.5em; */
@@ -69,8 +99,11 @@ body{
   color: var(--text-color);
   font-weight: 500;
 }
+.container a{
+  margin-top: 15px;
+}
 .maindiv{
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -220,11 +253,15 @@ p {
 
 #credits {
   margin-top: 6.9px;
+  text-align: center;
 }
 
 
 .footer-social-media {
   font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .social-icon {
   width: 40px;
@@ -233,24 +270,31 @@ p {
   text-align: center;
   border-radius: 50%;
   color:var(--heading-color);
-  transition: all 0.2s ease-in;
+  transition: all 0.1s ease-in;
 }
 .fa-facebook:hover {
-  color: rgb(20, 20, 231);
+  transform: scale(1.1,1.1);
+  color: rgb(31, 77, 246);
 }
 .fa-instagram:hover {
-  color: rgb(173, 10, 160);
+  color: rgb(207, 0, 190);
+  transform: scale(1.1,1.1);
 }
 .fa-twitter:hover {
   color: rgb(47, 196, 255);
+  transform: scale(1.1,1.1);
 }
 .fa-youtube:hover {
-  color: rgba(223, 16, 16, 0.904);
+  color: rgba(218, 5, 5, 0.904);
+  transform: scale(1.1,1.1);
 }
 .fa-discord:hover{
-  color: rgb(142, 76, 187);
+  transform: scale(1.1,1.1);
+  color: rgb(108, 80, 221);
 }
-
+.footer hr{
+  margin: 0 auto 20px auto;
+}
 /*
 Extra small devices (phones,600px and down) */
 @media only screen and (max-width: 600px) {
